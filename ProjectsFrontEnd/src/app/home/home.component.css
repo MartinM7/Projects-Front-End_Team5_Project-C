@@ -1,12 +1,32 @@
 .card-img-top {
-    width: 100%;
-    height: 20vw;
-    object-fit: cover;
+  width: 100%;
+  height: 20vw;
+  object-fit: cover;
+}
+
+.card {
+  /*or .card-img-top*/
+  filter: grayscale(100%);
+}
+
+.card:hover {
+  /*or .card-img-top*/
+  transform: scale(1.05);
+  filter: grayscale(20%);
+  transition: all 0.5s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .card-img-top {
+    height: 50vw;
+  }
+  .card {
+    filter: none;
   }
 
-  @media (max-width: 768px) {
-    .card-img-top {
-        height: 50vw;
-    }
+  .card:hover {
+    transform: none;
+    filter: none;
+    transition: none;
   }
-  
+}
