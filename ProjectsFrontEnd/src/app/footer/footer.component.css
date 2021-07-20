@@ -2,7 +2,7 @@
 
 .container-fluid {
   overflow: hidden;
-  background: black;
+  background: #212529 !important;
   color: #627482 !important;
   margin-bottom: 0;
   padding-bottom: 0;
