@@ -6,19 +6,19 @@
 
 a {
   text-decoration: none;
+  color: rgb(113,116,119);
 }
 
 a:hover {
   text-decoration: none;
+  color: white;
 }
 
 .card {
-  /*or .card-img-top*/
   filter: grayscale(100%);
 }
 
 .card:hover {
-  /*or .card-img-top*/
   transform: scale(1.05);
   filter: grayscale(20%);
   transition: all 0.5s ease-in-out;

@@ -3,3 +3,7 @@ img {
     height: 100vh;
     object-fit: cover;
 }
+
+h3 {
+    text-shadow: 6px 2px 7px #000000;
+}
