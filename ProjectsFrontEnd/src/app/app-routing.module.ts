@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 
 const routes: Routes = [
@@ -17,11 +18,17 @@ const routes: Routes = [
   },
   {
     path: "testimonials", component: TestimonialsComponent
+  },
+  {
+    path: "portfolio", component: PortfolioComponent
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {
+    anchorScrolling: 'enabled'
+  }
+  )],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
