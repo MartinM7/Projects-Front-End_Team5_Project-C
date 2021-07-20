@@ -1,57 +1,82 @@
-<!-- <div class="container-fluid ">
+<div class="container">
     <h2 class="text-center p-5">Portfolio</h2>
-
-    <h3 class="text-center m-3">Children Photography</h3>
+    
+    <h3 id="children" class="text-center m-3">Children Photography</h3>
     <div class="row justify-content-around">
-        <img src="./assets/images/children/1.jpg">
-        <img src="./assets/images/children/2.jpg">
-        <img src="./assets/images/children/3.jpg">
-        <img src="./assets/images/children/4.jpg">
-    </div>
-
-
-    <div class="row justify-content-around justify-content-center-sm">
-        <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 g-5 mb-5">
-            <img src="./assets/images/children/1.jpg"
+        <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 g-5 mb-5" *ngFor="let picturesCh of picturesCh">
+            <img src="{{picturesCh.imgSmallCh}}"
                 class="card-img-top img-fluid" alt="destination">
         </div>
-        <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 g-5 mb-5">
-            <img src="./assets/images/children/2.jpg"
-            class="card-img-top img-fluid" alt="destination">
-        </div>
-
-        <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 g-5 mb-5">
-            <img src="./assets/images/children/3.jpg"
-            class="card-img-top img-fluid" alt="destination">
-        </div>
-        <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 g-5 mb-5">
-            <img src="./assets/images/children/4.jpg"
-            class="card-img-top img-fluid" alt="destination">
-        </div>
+        <h4 class="text-center">Description</h4>
+        <p>I'm baby health goth next level shoreditch hot chicken wayfarers. Poutine green juice hexagon succulents hell
+            of. VHS
+            chicharrones artisan, meditation art party heirloom direct trade vinyl sartorial lumbersexual try-hard
+            readymade
+            lyft.
+            Cliche master cleanse YOLO franzen lyft bicycle rights stumptown poke.I'm baby hammock kinfolk tofu flexitarian sustainable messenger bag brooklyn polaroid. Stumptown direct trade
+            williamsburg farm-to-table, etsy wayfarers lo-fi. Biodiesel fingerstache brunch, readymade shaman selvage lo-fi
+            pinterest vegan keytar kogi ethical pitchfork deep v hoodie. Williamsburg next level mustache fanny pack skateboard
+            sriracha, godard shabby chic tousled kombucha live-edge man braid echo park iceland humblebrag. Slow-carb chicharrones
+            literally, stumptown activated charcoal chillwave chambray.</p>
     </div>
 
-
-    <h3 class="text-center m-3">Group Photography</h3>
+    <h3 id="group" class="text-center m-3">Group Photography</h3>
     <div class="row justify-content-around">
-        <img src="./assets/images/group/1.jpg">
-        <img src="./assets/images/group/2.jpg">
-        <img src="./assets/images/group/3.jpg">
-        <img src="./assets/images/group/4.jpg">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 g-5 mb-5" *ngFor="let picturesG of picturesG">
+            <img src="{{picturesG.imgSmallG}}"
+                class="card-img-top img-fluid" alt="destination">
+        </div>
+        <h4 class="text-center">Description</h4>
+        <p>Leggings you probably haven't heard of them hoodie, tilde quinoa etsy freegan street art whatever poutine.
+            Cronut
+            chia
+            90's kickstarter woke. Chillwave keffiyeh hashtag schlitz fixie irony. Kombucha fashion axe la croix
+            crucifix edison
+            bulb. Shaman wolf mustache, shoreditch hoodie slow-carb heirloom. Pabst mumblecore DIY paleo direct trade
+            slow-carb
+            yr
+            YOLO listicle.Readymade lomo snackwave, letterpress distillery dreamcatcher chicharrones. Organic DIY crucifix unicorn locavore vinyl
+            kickstarter, cardigan food truck hella chia. Tattooed sartorial aesthetic, flannel lomo salvia street art letterpress
+            lo-fi keffiyeh tofu disrupt cronut. Normcore celiac irony, activated charcoal retro stumptown copper mug hexagon
+            gochujang.</p>
     </div>
 
-    <h3 class="text-center m-3">Portrait Photography</h3>
+    <h3 id="portrait" class="text-center m-3">Portrait Photography</h3>
     <div class="row justify-content-around">
-        <img src="./assets/images/portrait/1.jpg">
-        <img src="./assets/images/portrait/2.jpg">
-        <img src="./assets/images/portrait/3.jpg">
-        <img src="./assets/images/portrait/4.jpg">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 g-5 mb-5" *ngFor="let picturesP of picturesP">
+            <img src="{{picturesP.imgSmallP}}"
+                class="card-img-top img-fluid" alt="destination">
+        </div>
+        <h4 class="text-center">Description</h4>
+        <p>Church-key pour-over roof party bicycle rights humblebrag synth. Kinfolk mustache vexillologist photo booth
+            lumbersexual
+            celiac cred swag small batch waistcoat seitan church-key. Waistcoat authentic irony tattooed. Schlitz celiac
+            biodiesel
+            fam man bun 90's VHS synth lomo. Yuccie migas street art banh mi cliche craft beer pork belly fashion axe
+            glossier
+            bitters hammock fixie la croix.Seitan edison bulb disrupt sartorial kale chips, craft beer locavore. Hell of mlkshk man braid, pour-over live-edge air
+            plant semiotics austin try-hard YOLO neutra selfies kickstarter. Copper mug kinfolk cold-pressed you probably haven't
+            heard of them cronut mumblecore, cloud bread put a bird on it stumptown tbh neutra. Kinfolk crucifix fam farm-to-table
+            DIY, iPhone pabst beard celiac four dollar toast narwhal cray hexagon wayfarers fashion axe. Swag street art food truck
+            chillwave fixie tacos. Flexitarian waistcoat put a bird on it, church-key palo santo small batch biodiesel pabst celiac
+            kogi tattooed vinyl kombucha thundercats.</p>
     </div>
 
-    <h3 class="text-center m-3">Wedding Photography</h3>
+    <h3 id="wedding" class="text-center m-3">Wedding Photography</h3>
     <div class="row justify-content-around">
-        <img src="./assets/images/wedding/1.jpg">
-        <img src="./assets/images/wedding/2.jpg">
-        <img src="./assets/images/wedding/3.jpg">
-        <img src="./assets/images/wedding/4.jpg">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 g-5 mb-5" *ngFor="let picturesW of picturesW">
+            <img src="{{picturesW.imgSmallW}}"
+                class="card-img-top img-fluid" alt="destination">
+        </div>
+        <h4 class="text-center">Description</h4>
+        <p>Art party cloud bread banh mi whatever tilde palo santo. Seitan viral fingerstache activated charcoal cray
+            banjo DIY
+            trust fund bitters celiac skateboard la croix sartorial 8-bit. Artisan kitsch roof party health goth before
+            they
+            sold out kinfolk snackwave mixtape godard put a bird on it. Tumblr edison bulb YOLO activated charcoal
+            organic. Edison
+            bulb live-edge stumptown, venmo gastropub kombucha tbh snackwave cray.Artisan pickled sustainable chambray flexitarian vaporware, hoodie bushwick. Tumeric readymade vinyl portland neutra
+            asymmetrical hot chicken succulents 90's. Enamel pin selvage vape kinfolk. Sustainable edison bulb disrupt gentrify.
+            Palo santo biodiesel church-key kogi cliche flexitarian tote bag, meggings viral.</p>
     </div>
-</div>                                                 things need a rethink :D -->
+</div>
