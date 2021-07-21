@@ -15,8 +15,23 @@ export class PortfolioComponent implements OnInit {
   picturesG = picturesG;
   picturesP = picturesP;
   picturesW = picturesW;
-
+  bigPicture = "";
+  showModal = false;
   constructor() { }
+
+  openModal(event: any) {
+    this.bigPicture = event.target.getAttribute("data")
+    console.log(this.bigPicture);
+    this.playAudio();
+    
+  }
+
+  playAudio() {
+    let audio = new Audio();
+    audio.src ="../../assets/audio/1.mp3"
+    audio.load();
+    audio.play();
+  }
 
   ngOnInit(): void {
   }

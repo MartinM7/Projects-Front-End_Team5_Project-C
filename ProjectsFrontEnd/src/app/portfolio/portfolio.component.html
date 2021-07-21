@@ -1,11 +1,37 @@
 <div class="container">
+
+    <!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button> -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+         <img src="{{bigPicture}}" alt="">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    <!-- modal end -->
     <h2 class="text-center p-5">Portfolio</h2>
 
     <h3 id="children" class="text-center m-3"><u>Children Photography</u></h3>
     <div class="row justify-content-around">
         <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 g-5 mb-lg-5 mb-0 d-flex justify-content-center"
             *ngFor="let picturesCh of picturesCh">
-            <img src="{{picturesCh.imgSmallCh}}" class="card-img-top img-fluid" alt="destination">
+            <img (click)="openModal($event)" data-bs-toggle="modal" data-bs-target="#exampleModal" src="{{picturesCh.imgSmallCh}}" attr.data="{{picturesCh.imgBigCh}}" class="card-img-top img-fluid" alt="destination">
         </div>
         <h4 class="text-center">Description</h4>
         <p class="text-center">I'm baby health goth next level shoreditch hot chicken wayfarers. Poutine green juice
@@ -29,7 +55,7 @@
     <div class="row justify-content-around">
         <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 g-5 mb-5 d-flex justify-content-center"
             *ngFor="let picturesG of picturesG">
-            <img src="{{picturesG.imgSmallG}}" class="card-img-top img-fluid" alt="destination">
+            <img (click)="openModal($event)" src="{{picturesG.imgSmallG}}" attr.data="{{picturesG.imgBigG}}" data-bs-toggle="modal" data-bs-target="#exampleModal" class="card-img-top img-fluid" alt="destination">
         </div>
         <h4 class="text-center">Description</h4>
         <p class="text-center">Leggings you probably haven't heard of them hoodie, tilde quinoa etsy freegan street art
@@ -54,7 +80,7 @@
     <div class="row justify-content-around">
         <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 g-5 mb-5 d-flex justify-content-center"
             *ngFor="let picturesP of picturesP">
-            <img src="{{picturesP.imgSmallP}}" class="card-img-top img-fluid" alt="destination">
+            <img (click)="openModal($event)" src="{{picturesP.imgSmallP}}" attr.data="{{picturesP.imgBigP}}" data-bs-toggle="modal" data-bs-target="#exampleModal" class="card-img-top img-fluid" alt="destination">
         </div>
         <h4 class="text-center">Description</h4>
         <p class="text-center">Church-key pour-over roof party bicycle rights humblebrag synth. Kinfolk mustache
@@ -81,7 +107,7 @@
     <div class="row justify-content-around">
         <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 g-5 mb-5 d-flex justify-content-center"
             *ngFor="let picturesW of picturesW">
-            <img src="{{picturesW.imgSmallW}}" class="card-img-top img-fluid" alt="destination">
+            <img (click)="openModal($event)" src="{{picturesW.imgSmallW}}" attr.data="{{picturesW.imgBigW}}" data-bs-toggle="modal" data-bs-target="#exampleModal" class="card-img-top img-fluid" alt="destination">
         </div>
         <h4 class="text-center">Description</h4>
         <p class="text-center">Art party cloud bread banh mi whatever tilde palo santo. Seitan viral fingerstache
