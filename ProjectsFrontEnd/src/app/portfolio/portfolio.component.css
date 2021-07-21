@@ -24,6 +24,10 @@
     width: 50vw;
     height: 50vw;
   }
+
+  #imgB {
+  width: 90%;
+}
   
   .imgS:hover {
     transform: none;
