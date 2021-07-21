@@ -24,7 +24,6 @@ export class PortfolioComponent implements OnInit {
 
   openModal(event: any) {
     this.bigPicture = event.target.getAttribute("data")
-    console.log(this.bigPicture);
     this.playAudio();
   }
 
