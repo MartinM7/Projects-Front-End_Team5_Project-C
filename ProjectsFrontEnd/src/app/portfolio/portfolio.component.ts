@@ -3,7 +3,7 @@ import { picturesCh } from '../pictures';
 import { picturesG } from '../pictures';
 import { picturesP } from '../pictures';
 import { picturesW } from '../pictures';
-
+import { Router } from '@angular/router'; //link portfolio btn to Contact page
 
 @Component({
   selector: 'portfolio',
@@ -16,8 +16,10 @@ export class PortfolioComponent implements OnInit {
   picturesP = picturesP;
   picturesW = picturesW;
 
-  constructor() { }
-
+  constructor(private router: Router) { }//link portfolio btn to Contact page
+  goToContact () { //link portfolio btn to Contact page
+    this.router.navigateByUrl('/contact');
+  }
   ngOnInit(): void {
   }
 
