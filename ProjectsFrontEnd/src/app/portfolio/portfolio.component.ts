@@ -21,11 +21,11 @@ export class PortfolioComponent implements OnInit {
   goToContact () { //link portfolio btn to Contact page
     this.router.navigateByUrl('/contact');
   }
+
   openModal(event: any) {
     this.bigPicture = event.target.getAttribute("data")
     console.log(this.bigPicture);
     this.playAudio();
-    
   }
 
   playAudio() {
