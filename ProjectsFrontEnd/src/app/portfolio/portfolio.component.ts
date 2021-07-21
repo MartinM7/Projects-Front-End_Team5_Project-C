@@ -16,7 +16,7 @@ export class PortfolioComponent implements OnInit {
   picturesP = picturesP;
   picturesW = picturesW;
   bigPicture = "";
-  showModal = false;
+  
   constructor(private router: Router) { }//link portfolio btn to Contact page
   goToContact () { //link portfolio btn to Contact page
     this.router.navigateByUrl('/contact');
