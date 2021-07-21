@@ -15,11 +15,27 @@ export class PortfolioComponent implements OnInit {
   picturesG = picturesG;
   picturesP = picturesP;
   picturesW = picturesW;
-
+  bigPicture = "";
+  showModal = false;
   constructor(private router: Router) { }//link portfolio btn to Contact page
   goToContact () { //link portfolio btn to Contact page
     this.router.navigateByUrl('/contact');
   }
+  openModal(event: any) {
+    this.bigPicture = event.target.getAttribute("data")
+    console.log(this.bigPicture);
+    this.playAudio();
+    
+  }
+
+  playAudio() {
+    let audio = new Audio();
+    audio.src ="../../assets/audio/1.mp3"
+    audio.load();
+    audio.play();
+  }
+
+
   ngOnInit(): void {
   }
 
